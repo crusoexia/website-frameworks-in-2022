@@ -1,0 +1,27 @@
+{
+  "name": "nextjs",
+  "version": "0.0.0",
+  "description": "> TODO: description",
+  "author": "crusoexia <xiawenlan1984@gmail.com>",
+  "homepage": "",
+  "license": "ISC",
+  "main": "lib/nextjs.js",
+  "directories": {
+    "lib": "lib",
+    "test": "__tests__"
+  },
+  "files": [
+    "lib"
+  ],
+  "scripts": {
+    "test": "node ./__tests__/nextjs.test.js"
+  },
+  "dependencies": {
+    "next": "^13.1.6",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "volta": {
+    "extends": "../../package.json"
+  }
+}
