@@ -14,6 +14,10 @@
     "lib"
   ],
   "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
     "test": "node ./__tests__/nextjs.test.js"
   },
   "dependencies": {
@@ -23,5 +27,8 @@
   },
   "volta": {
     "extends": "../../package.json"
+  },
+  "devDependencies": {
+    "@types/node": "18.11.18"
   }
 }
