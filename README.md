@@ -1,5 +1,9 @@
 # website-frameworks-in-2022
-Inspect the website frameworks in 2022.
+Inspect the fullstack website meta-frameworks in 2022.
+
+## Trends
+
+In recent years the trend of web is moving more and more javascript from the client-side back to the server-side to provide better performance with no compromise to the user experience. Thanks to the client-side UI frameworks provided the SSR ability which makes this happen.
 
 ## Some consideration:
 
