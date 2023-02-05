@@ -25,8 +25,14 @@ ul {
   padding: 30px;
 }
 
+#wandering_earth {
+  cursor: pointer;
+}
+
 .todo-list {
   max-width: 800px;
+  padding: 0;
+  margin: 0;
 }
 
 .todo-item {

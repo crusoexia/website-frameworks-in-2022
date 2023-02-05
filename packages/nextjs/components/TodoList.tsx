@@ -24,7 +24,7 @@ const TodoList = ({ todos }: Props) => {
   return (
     <ul className="todo-list">
       {
-        todos.map(({ id, todo, done }: Todo) => {
+        todos?.map(({ id, todo, done }: Todo) => {
           return (
             <li key={id}>
               <TodoItem id={id} todo={todo} done={done}/>
