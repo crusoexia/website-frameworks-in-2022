@@ -21,3 +21,21 @@ This question relates to below challenges:
 ### Does the client side state management(redux) is still needed?
 
 It's still depends on the actual situation. Though the *Per-page data governance* makes it less necessary of centralized-client-side state management. But it is still requires the client to host the session data in order to keep the Server-Side stateless.
+
+## Framework Metrics
+
+### Supported UI frameworks
+
+* __nextjs__: React
+
+### Pattern invasive
+
+* __nextjs__: reasonable; acceptable; low.
+
+### Features
+
+* __nextjs__: CLR; SSR; SSG; Hydration; Interactive resource loading; Built-in webserver.
+
+### Performance
+
+### Deployment
