@@ -2,7 +2,7 @@ import React from 'react';
 import type { Todo } from '../domain';
 import TodoItem from './TodoItem';
 import { TodosContext } from './TodosContext';
-import { createTodo } from '../todo/reducer';
+import { createTodo } from '../reducer';
 
 export interface Props {
   todos: Todo[];

@@ -1,8 +1,8 @@
 import type { ReactElement, ReactNode } from 'react';
 import type { NextPage } from 'next';
 import type { AppProps } from 'next/app';
-import AppNav from '../components/AppNav';
-import '../styles/global.css';
+import AppNav from 'shared/components/AppNav';
+import 'shared/styles/global.css';
 
 export type NextPageWithLayout<P = {}, IP = P> = NextPage<P, IP> & {
   getLayout?: (page: ReactElement) => ReactNode;

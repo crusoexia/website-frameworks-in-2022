@@ -1,8 +1,8 @@
 import React from 'react';
-import TodoList from '../../components/TodoList';
-import { reducer } from '../../todo/reducer';
-import { Provider } from '../../components/TodosContext';
-import {Todo} from '../../domain';
+import TodoList from 'shared/todo/components/TodoList';
+import { reducer } from 'shared/todo/reducer';
+import { Provider } from 'shared/todo/components/TodosContext';
+import {Todo} from 'shared/todo/domain';
 
 export default function List({ todos }: { todos: Todo[] }) {
   const [ state, dispatch ] = React.useReducer(reducer, { todos });
