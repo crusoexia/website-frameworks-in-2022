@@ -1,5 +1,5 @@
 import type { NextApiRequest, NextApiResponse } from 'next';
-import { Todo } from '../../domain';
+import { Todo } from 'shared/todo/domain';
 
 let todos: Todo[] = [
   { id: '1', todo: 'Check the email list.', done: false },

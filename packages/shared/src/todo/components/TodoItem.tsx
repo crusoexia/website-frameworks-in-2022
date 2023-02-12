@@ -1,6 +1,6 @@
 import React from 'react';
 import { TodosContext } from './TodosContext';
-import { completeTodoAction, updateTodo } from '../todo/reducer';
+import { completeTodoAction, updateTodo } from '../reducer';
 
 export interface Props {
   id: string;

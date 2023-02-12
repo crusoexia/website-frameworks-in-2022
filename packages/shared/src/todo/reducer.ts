@@ -1,5 +1,5 @@
 import produce from 'immer';
-import { Action, Todo } from '../domain';
+import { Action, Todo } from './domain';
 
 export const COMPLETE_TODO = 'completeTodoAction';
 export const UPDATE_TODO = 'updateTodo';

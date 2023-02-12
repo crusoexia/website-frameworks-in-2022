@@ -1,5 +1,5 @@
 import useSWR from 'swr';
-import {Todo} from '../../domain';
+import {Todo} from 'shared/todo/domain';
 
 const fetcher = (url: string) => fetch(url).then(res => res.json());
 
