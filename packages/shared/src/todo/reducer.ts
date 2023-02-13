@@ -1,6 +1,7 @@
 import produce from 'immer';
 import { Action, Todo } from './domain';
 
+export const GET_TODOS = 'getTodos';
 export const COMPLETE_TODO = 'completeTodoAction';
 export const UPDATE_TODO = 'updateTodo';
 export const CREATE_TODO = 'createTodo';
@@ -13,6 +14,13 @@ interface CompleteTodoPayload {
 interface UpdateTodoPayload {
   id: string;
   todo: string;
+}
+
+export function getTodos(payload: Todo[]): Action<Todo[]> {
+  return {
+    type: GET_TODOS,
+    payload,
+  };
 }
 
 export function completeTodoAction(payload: CompleteTodoPayload): Action<CompleteTodoPayload> {
@@ -36,8 +44,13 @@ export function createTodo(payload: string): Action<string> {
   };
 }
 
-export function reducer(state: { todos: Todo[] }, action: Action) {
+export function reducer(state: { todos: Todo[]; initialized?: boolean }, action: Action) {
   switch(action.type) {
+    case GET_TODOS:
+      return produce(state, draft => {
+        draft.todos = action.payload as Todo[];
+        draft.initialized = true;
+      });
     case COMPLETE_TODO:
       return produce(state, draft => {
         const todo = draft.todos.find(({id}) => id === (action.payload as CompleteTodoPayload).id) as Todo;

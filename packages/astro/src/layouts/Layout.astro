@@ -1,4 +1,7 @@
 ---
+import 'shared/styles/global.css';
+import Layout from 'shared/layout/Layout.tsx';
+
 export interface Props {
 	title: string;
 }
@@ -16,7 +19,9 @@ const { title } = Astro.props;
 		<title>{title}</title>
 	</head>
 	<body>
-		<slot />
+	  <Layout>
+      <slot />
+	  </Layout>
 	</body>
 </html>
 <style is:global>
