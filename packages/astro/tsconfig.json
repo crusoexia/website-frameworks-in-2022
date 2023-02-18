@@ -2,7 +2,11 @@
   "extends": "astro/tsconfigs/base",
   "compilerOptions": {
     "paths": {
-      "shared/*": ["../../node_modules/shared/dist/*"]
-    }
+      "shared/*": [
+        "../../node_modules/shared/dist/*"
+      ]
+    },
+    "jsx": "react-jsx",
+    "jsxImportSource": "react"
   }
 }
