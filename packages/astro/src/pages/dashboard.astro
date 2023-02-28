@@ -1,0 +1,11 @@
+---
+import Layout from '../layouts/Layout.astro';
+import DashboardContainer from '../components/DashboardContainer.tsx';
+import Dashboard from 'shared/todo/components/Dashboard.tsx';
+---
+
+<Layout>
+  <DashboardContainer client:load>
+    <Dashboard client:load></Dashboard>
+  </DashboardContainer>
+</Layout>
