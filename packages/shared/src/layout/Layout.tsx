@@ -1,11 +1,17 @@
 import React from 'react';
 import AppNav from '../components/AppNav';
 
-const Layout = ({ children }: { children: React.ReactNode }) => {
+const Layout = ({ 
+  children,
+  linkComponent,
+}: { 
+  children: React.ReactNode;
+  linkComponent?: React.ComponentType<React.LinkHTMLAttributes<HTMLLinkElement>>;
+}) => {
   return (
     <div id="app">
       <nav id="app_nav">
-        <AppNav />
+        <AppNav linkComponent={linkComponent}/>
       </nav>
       <main id="app_main">{children}</main>
     </div>

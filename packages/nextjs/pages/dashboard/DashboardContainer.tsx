@@ -1,6 +1,6 @@
 import useSWR from 'swr';
-import {Todo} from 'shared/todo/domain';
-import { Provider } from 'shared/todo/components/DashboardContext';
+import {Todo} from 'shared/dist/todo/domain';
+import { Provider } from 'shared/dist/todo/components/DashboardContext';
 
 const fetcher = (url: string) => fetch(url).then(res => res.json());
 
