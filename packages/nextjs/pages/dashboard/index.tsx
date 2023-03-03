@@ -1,5 +1,5 @@
 import DashboardContainer from './DashboardContainer';
-import Dashboard from 'shared/todo/components/Dashboard';
+import Dashboard from 'shared/dist/todo/components/Dashboard';
 
 export default () => {
   return (

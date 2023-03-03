@@ -1,5 +1,5 @@
 import type { NextApiRequest, NextApiResponse } from 'next';
-import { getTodos, updateTodos } from 'shared/todo/db';
+import { getTodos, updateTodos } from 'shared/dist/todo/db';
 
 export default function handler(
   req: NextApiRequest,

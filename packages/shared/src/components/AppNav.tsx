@@ -1,7 +1,10 @@
 import React from 'react';
-import Link from 'next/link';
 
-const AppNav = () => {
+const AppNav = ({ 
+  linkComponent: Link = (props: React.LinkHTMLAttributes<HTMLLinkElement>) => React.createElement('a', props),
+}: { 
+  linkComponent?: React.ComponentType<React.LinkHTMLAttributes<HTMLLinkElement>>;
+}) => {
   return (
     <ul>
       <li>
