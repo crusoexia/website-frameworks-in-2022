@@ -31,8 +31,8 @@ const TodoItem = ({
 
   return (
     <div className={`todo-item ${done ? 'todo-item-done' : ''}`}>
-      <input type="checkbox" checked={done} onChange={handleDoneChange}/>
-      <input className="todo-item-input" type="text" value={todo} onChange={handleTodoChange} disabled={done}/>
+      <input name={`${id}_checked`} type="checkbox" checked={done} onChange={handleDoneChange}/>
+      <input name={id} className="todo-item-input" type="text" value={todo} onChange={handleTodoChange} disabled={done}/>
     </div>
   );
 };

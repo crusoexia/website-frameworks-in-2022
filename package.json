@@ -5,7 +5,8 @@
     "build:shared": "npm run build -w shared"
   },
   "workspaces": [
-    "packages/shared"
+    "packages/shared",
+    "packages/remix"
   ],
   "devDependencies": {
     "@types/node": "^18.11.18",
