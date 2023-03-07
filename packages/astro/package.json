@@ -12,5 +12,8 @@
 	"dependencies": {
 		"@astrojs/node": "^5.0.4",
 		"astro": "^2.0.15"
-	}
+	},
+  "volta": {
+    "extends": "../../package.json"
+  }
 }
