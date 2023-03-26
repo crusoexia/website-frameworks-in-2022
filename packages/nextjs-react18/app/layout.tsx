@@ -1,4 +1,6 @@
-import './globals.css'
+import Link from 'next/link';
+import Layout from 'shared/dist/layout/Layout';
+import 'shared/dist/styles/global.css';
 
 export const metadata = {
   title: 'Create Next App',
@@ -12,7 +14,12 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body>
+        <Layout
+          linkComponent={Link as React.ComponentType<React.LinkHTMLAttributes<HTMLLinkElement>>}>
+          {children}
+        </Layout>
+      </body>
     </html>
   )
 }
