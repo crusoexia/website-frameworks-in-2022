@@ -16,6 +16,9 @@ const AppNav = ({
       <li>
         <Link href="/dashboard">Dashboard</Link>
       </li>
+      <li>
+        <Link href="/dashboardCC">Dashboard Client Component</Link>
+      </li>
     </ul>
   )
 };
